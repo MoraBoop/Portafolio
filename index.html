@@ -8,35 +8,30 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="fav/favicon.ico">
-
-    <style>
-    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-    body {font-size:16px;}
-    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-    .w3-half img:hover{opacity:1}
-    </style>
-
+    
     <title>Jason Mora || Portafolio</title>
 </head>
 
 <body>    
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding w3-blue" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
             <h3 class="w3-padding-64"><b>Portafolio</b></h3>
         </div>
         <div class="w3-bar-block">
-            <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a> 
             <a href="#proyectos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyectos</a> 
+            <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a> 
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
         </div>
     </nav>
     
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-        <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+        <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
         <span>Portafolio</span>
     </header>
     
@@ -46,10 +41,25 @@
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
     
+        <!-- Proyectos -->
+        <div class="w3-container" style="margin-top:80px" id="proyectos">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos.</b></h1>
+            <hr class="w3-round w3-text-blue">
+        </div>
+        <div class="w3-container">
+            <ul class="w3-ul w3-border">
+                <li><h1><i class="fa fa-github"></i> <a href="https://github.com/JasonMoraMora" target="_blank">GitHub</a></h1></li>
+                <li>CRUD-NodeJS-Mongodb</li>
+                <li>CRUD-NodeJS-MySQL</li>
+                <li>Sistema de notas</li>
+            </ul>
+        </div>
+        
+        
         <!-- habilidades -->
-        <div class="w3-container" id="habilidades" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Habilidades.</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
+        <div class="w3-container" style="margin-top:75px" id="habilidades">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Habilidades</b></h1>
+            <hr class="w3-round w3-text-blue">
             <ul class="w3-ul w3-border">
                 <li><h2>FrontEnd</h2></li>
                 <li>HTML</li>
@@ -64,65 +74,68 @@
                 <li>Node JS</li>
                 <li>Express JS</li>
                 <li>MongoDB</li>
-                <li>SQL Server</li>
                 <li>MySQL</li>
             </ul>
                 
             <br>
 
             <ul class="w3-ul w3-border">
-                <li><h2>Otras Habilidades</h2></li>
+                <li><h2>Complementos</h2></li>
                 <li>AJAX</li>
                 <li>JSON</li>
+                <li>MarkDown</li>
+            </ul>
+
+            <br>
+
+            <ul class="w3-ul w3-border">
+                <li><h2>Conocimientos Basicos</h2></li>
+                <li>Visual Basic & C#</li>
+                <li>Java NetbeansIDE</li>
+                <li>ASP.NET</li>
+                <li>SQL Server</li>
+                <li>PHP</li>
                 <li>Electron JS</li>
                 <li>Jhonny Five JS</li>
                 <li>API Google maps</li>
             </ul>
         </div>
 
-        <br>
-        
-        <div class="w3-row-padding w3-grayscale">
-            <div class="w3-col m12 w3-margin-bottom">
-                <div class="w3-light-grey">
-                    <div class="w3-container">
-                        <h3>Jaison Mora Mora</h3>
-                        <p class="w3-opacity">Programador & analista</p>
-                        <p>Me considero una persona autodidacta, me gusta estar al dia en las tecnologia mas usadas para el desarrollo web</p>
-                    </div>
-                </div>
+
+        <!-- About me -->
+        <div class="w3-container" id="about" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>About me</b></h1>
+            <hr class="w3-round w3-text-blue">
+            <div class="w3-container">
+                <h3>Jaison Jhair Mora Mora</h3>
+                <p class="w3-opacity">Tecnico, Programador & analista</p>
+                <table class="w3-table-all">
+                    <tr>
+                        <td>DNI</td>
+                        <td>73972104</td>
+                    </tr>
+                    <tr>
+                        <td>EDAD</td>
+                        <td>22</td>
+                    </tr>
+                </table>
+                <p>Soy una persona responsable, creativa, organizada, respetuosa y sociable. Me considero un autodidacta y siempre estoy a la vanguardia de todas las nuevas tendencias del desarrollo web</p>
             </div>
         </div>
 
-        <!-- Proyectos -->
-        <div class="w3-container" style="margin-top:80px" id="proyectos">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Proyectos.</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-        </div>
-        <div class="w3-container">
-            <ul class="w3-ul w3-border">
-                <li><h1><i class="fa fa-github"></i> <a href="https://github.com/JasonMoraMora" target="_blank">GitHub</a></h1></li>
-                <li>CRUD-NodeJS-Mongodb</li>
-                <li>CRUD-NodeJS-MySQL</li>
-                <li>Sistema de notas</li>
-                <li></li>
-            </ul>
-        </div>
-        <br>
-
         <!-- Contact -->
         <div class="w3-container" id="contact" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Contacto.</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
+            <hr class="w3-round w3-text-blue">
             <ul class="w3-ul">
                 <li>
-                    <i class="fa fa-envelope w3-xlarge"></i> jasonmoramora@hotmail.com        
+                    <i class="fa fa-envelope w3-xlarge"></i> Mail:<br>jasonmoramora@outlook.com        
                 </li>
                 <li>
-                    <i class="fa fa-whatsapp w3-xlarge"></i> Whatsapp : 993082443
+                    <i class="fa fa-phone-square w3-xlarge"></i> Telefono:<br>433-1310 <br> 914491152
                 </li>
                 <li>
-                    <i class="fa fa-youtube w3-xlarge"></i><a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber"> Jason Mora Mora</a>
+                    <i class="fa fa-map-marker w3-xlarge"></i> Domicilio:<br>Av. Manco Capac 749 Interior 4. La Victoria
                 </li>
             </ul>
    
