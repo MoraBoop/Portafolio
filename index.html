@@ -25,6 +25,7 @@
             <a href="#proyectos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyectos</a> 
             <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a> 
             <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
+            <a href="#certificados" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certificados</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
         </div>
     </nav>
@@ -42,8 +43,9 @@
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
     
         <!-- Proyectos -->
-        <div class="w3-container" style="margin-top:80px" id="proyectos">
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos.</b></h1>
+        <div class="w3-container" id="proyectos">
+            <div style="margin-top: 75px"></div>
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos</b></h1>
             <hr class="w3-round w3-text-blue">
         </div>
         <div class="w3-container">
@@ -54,10 +56,10 @@
                 <li>Sistema de notas</li>
             </ul>
         </div>
-        
-        
+                
         <!-- habilidades -->
-        <div class="w3-container" style="margin-top:75px" id="habilidades">
+        <div class="w3-container" id="habilidades">
+            <div style="margin-top: 75px"></div>
             <h1 class="w3-xxxlarge w3-text-blue"><b>Habilidades</b></h1>
             <hr class="w3-round w3-text-blue">
             <ul class="w3-ul w3-border">
@@ -101,9 +103,9 @@
             </ul>
         </div>
 
-
         <!-- About me -->
-        <div class="w3-container" id="about" style="margin-top:75px">
+        <div class="w3-container" id="about">
+            <div style="margin-top: 75px"></div>
             <h1 class="w3-xxxlarge w3-text-blue"><b>About me</b></h1>
             <hr class="w3-round w3-text-blue">
             <div class="w3-container">
@@ -123,8 +125,19 @@
             </div>
         </div>
 
+        <!-- Certificados -->
+        <div class="w3-container" id="certificados">
+            <div style="margin-top: 75px"></div>
+            <h1 class="w3-xxxlarge w3-text-blue"><b>Certificados</b></h1>
+            <hr class="w3-round w3-text-blue">
+            <div class="w3-container">
+                
+            </div>
+        </div>
+
         <!-- Contact -->
-        <div class="w3-container" id="contact" style="margin-top:75px">
+        <div class="w3-container" id="contact">
+            <div style="margin-top: 75px"></div>
             <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
             <hr class="w3-round w3-text-blue">
             <ul class="w3-ul">
@@ -138,12 +151,19 @@
                     <i class="fa fa-map-marker w3-xlarge"></i> Domicilio:<br>Av. Manco Capac 749 Interior 4. La Victoria
                 </li>
             </ul>
-   
+            <div class="w3-container">
+                <h3 class="w3-opacity">Redes Sociales</h3>
+                <a href="https://www.facebook.com/jasonjair.moramora" target="_blank"><i class="fa fa-facebook-square w3-xxxlarge w3-text-blue"></i></a>
+                <a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber" target="_blank"><i class="fa fa-youtube-square w3-xxxlarge w3-text-red w3-margin-left"></i></a>
+                <a href="https://github.com/JasonMoraMora?tab=repositories" target="_blank"><i class="fa fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>    
+            </div>                
+            <br>
             <!-- mapa -->
             <div id="map" style="width:100%;height:300px"></div>
             <script src="address.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTkwFTgcr4wO_80sF5Rk1xbz7e_ZuvL5M&callback=myMap" async defer></script>
-        </div>
+        </div>        
+                
         
     <!-- End page content -->
     </div>
