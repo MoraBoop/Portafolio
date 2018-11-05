@@ -4,3 +4,10 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 hr {border: solid 5px; width: 50px;}
 .responsive_img{width: 100%;height: auto;}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px;
+    grid-gap: 20px;
+}
