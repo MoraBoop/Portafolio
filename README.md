@@ -1,2 +1,9 @@
 # Portafolio
-Mi portafolio
+
+### Skills
+
+### Programs exp
+
+### About Me
+
+### Contact

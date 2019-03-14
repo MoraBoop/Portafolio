@@ -5,9 +5,13 @@ body {font-size:16px;}
 hr {border: solid 5px; width: 50px;}
 .responsive_img{width: 100%;height: auto;}
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 0px;
-    grid-gap: 20px;
+    grid-template-columns: auto auto auto auto;
+}
+@media only screen and (max-width: 770px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }

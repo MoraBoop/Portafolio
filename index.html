@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fav/favicon.ico">
+    <link rel="icon" href="fav/favicon.ico">    
     
     <title>Jason Mora || Portafolio</title>
-
+    
     <script src="menu-responsive.js"></script>
-
 </head>
 
 <body>    
@@ -45,8 +43,7 @@
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:340px;margin-right:40px">
-    
+    <div class="w3-main" style="margin-left:340px; margin-right: 30px">    
         <!-- Proyectos -->
         <div class="w3-container" id="proyectos">
             <div style="margin-top: 75px"></div>
@@ -54,22 +51,31 @@
             <hr class="w3-round w3-text-blue">
         </div>
         <div class="w3-container">
+            <div>
+                <p>
+                    Todos mis proyectos solo son la base de uso de tecnologias para crear aplicaciones, puedes seguir mis proyectos en mi cuenta de github
+                </p>
+                <h3>                    
+                    <span> <i class="fab fa-github"></i></span> <a href="https://github.com/MoraBoop" target="_blank">Ir a GitHub/MoraBoop</a>                 
+                </h3>
+            </div>
             <div class="grid-container">
-                <div class="w3-container w3-card-2">
-                    <div>
-                        <h2>DataQuery</h2>            
-                        <p>Sistema CRUD para administrar datos de una manera sencilla, cuenta con una interfast interactiva y simplista.</p>
-                        <div class="w3-opacity">
-                            <b><p>Tecnologias usadas:</p></b>
-                            <li>NodeJS</li>
-                            <li>MongoDB</li>
-                            <li>ExpressJS</li>
-                            <li>CSS Grid</li>
-                            <li>W3.css & fontawesome.css</li>
-                            <li>AJAX & JSON</li>
-                        </div>
-                        <p><a href="https://github.com/JasonMoraMora/DataQuery/blob/master/README.md" class="w3-button w3-green w3-round-large" target="_blank">Ver detalles</a></p>
-                    </div>
+                <div class="w3-container w3-blue">
+                    <h4>ApiRest Angular</h4>
+                    <p>Api rest con nodeJs, express en el backend y Angular para el frontend</p>
+                </div>                
+                <div class="w3-container w3-green">
+                    <h4>Crud nodeJs, handlebars Js y mysql</h4>
+                    <p>Aplicacion para gestionar datos de personas</p>
+                </div>
+                <div class="w3-container w3-brown">
+                    <h4>ApiRest made with Arrays</h4>
+                    <p>Ejemplo de una apiRest solo usando datos de un array en el backend</p>
+                </div>
+                <div class="w3-container w3-red">
+                    <h4>NodeJS y MongoDb</h4>
+                    <p>Ejercicio en la cual experimento con una base de datos no relacional</p>
+                    
                 </div>
             </div>
         </div>
@@ -83,6 +89,7 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>Angular</li>
             </ul>
 
             <br>
@@ -214,34 +221,30 @@
         <div class="w3-container" id="contact">
             <div style="margin-top: 75px"></div>
             <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
-            <hr class="w3-round w3-text-blue">
-            <ul class="w3-ul">
-                <li>
-                    <i class="fas fa-envelope w3-xlarge w3-text-cyan"></i><span class="w3-opacity"><b> Mail:</b></span>
-                    <br><span>jasonmoramora@outlook.com</span>
-                </li>
-                <li>
-                    <i class="fas fa-phone-square w3-xlarge w3-text-green"></i><span class="w3-opacity"><b> Telefonos:</b></span>
-                    <br><span>433-1310</span>
-                    <br><span>914491152</span>
-                </li>
-                <li>
-                    <i class="fas fa-map-marker-alt w3-xlarge w3-text-red"></i><span class="w3-opacity"><b> Domicilio:</b></span>
-                    <br><span>Av. Manco Capac 749 Interior 4. La Victoria</span>
-                </li>
-            </ul>            
+            <hr class="w3-round w3-text-blue">           
+            <p>
+                <i class="fas fa-envelope w3-xlarge w3-text-cyan"></i><span class="w3-opacity"><b> Mail:</b></span>
+                <br><span>jasonmoramora@outlook.com</span>
+            </p>
+            <p>
+                <i class="fas fa-phone-square w3-xlarge w3-text-green"></i><span class="w3-opacity"><b> Telefonos:</b></span>
+                <br><span>433-1310</span>
+                <br><span>914491152</span>
+            </p> 
+            <p>        
+                <i class="fas fa-map-marker-alt w3-xlarge w3-text-red"></i><span class="w3-opacity"><b> Ubicacion:</b></span>
+                <br><span>Lima, Breña</span>
+            </p>
+
             <br>
-            <!-- mapa -->
-            <div id="map" style="width:100%;height:300px"></div>
-            <script src="address.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvq-gqWjeLEMfoTHo2yXRhoh3khjC1Bk&callback=myMap" async defer></script>            
+            
             <!-- redes sociales -->
             <br>
             <h3 class="w3-opacity">Redes Sociales</h3>
             <p>Tambien puedes contactarme atravez de mis redes sociales</p>
             <a href="https://www.facebook.com/Jaison-Mora-547396385614913" target="_blank"><i class="fab fa-facebook-square w3-xxxlarge w3-text-indigo"></i></a>
             <a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square w3-xxxlarge w3-text-red w3-margin-left"></i></a>
-            <a href="https://github.com/JasonMoraMora" target="_blank"><i class="fab fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>
+            <a href="https://github.com/moraboop" target="_blank"><i class="fab fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>
         </div>        
                 
         
