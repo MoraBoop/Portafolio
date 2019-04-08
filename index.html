@@ -62,14 +62,17 @@
                 </h3>
             </div>
             <div class="grid-container-project">
+
                 <div class="w3-container w3-blue">
-                    <h4>ApiRest Angular</h4>
-                    <p>Api rest con nodeJs, express en el backend y Angular para el frontend</p>
-                    <p><a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/api-nodeArray" target="_blank">GitHub &lt;code&gt;</a></p>                </div>                
-                <div class="w3-container w3-green">
+                    <h4>DataQuery</h4>
+                    <p>Sistema crud dinamico con filtrador de busqueda</p>
+                    <p><a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/DataQuery" target="_blank">GitHub &lt;code&gt;</a></p>                
+                </div>                
+                <div class="w3-container w3-green">                    
                     <h4>Crud nodeJs, handlebars Js y mysql</h4>
                     <p>Aplicacion para gestionar datos de personas</p>
-                    <p><a class="w3-button w3-hover-white w3-green w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/api-nodeArray" target="_blank">GitHub &lt;code&gt;</a></p>                </div>
+                    <p><a class="w3-button w3-hover-white w3-green w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/api-nodeArray" target="_blank">GitHub &lt;code&gt;</a></p>                
+                </div>
                 <div class="w3-container w3-brown">
                     <h4>ApiRest made with Arrays</h4>
                     <p>Ejemplo de una apiRest solo usando datos de un array en el backend</p>
@@ -121,9 +124,38 @@
                 </div>
             </div>
                             
-            
+          
 
             <br>
+
+            <h3>Google Maps API</h3>
+            <p>
+                <button onclick="mapBasic()">Basico</button>
+                <button onclick="mapMarkAnimate()">Basico</button>
+            </p>
+
+            <div class="myMap" id="googleMap"></div>
+
+            <script>
+                function mapBasic() {
+                    var mapProp = {                        
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:11
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+                function mapMarkAnimate() {
+                    var mapProp = {                        
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:11,
+                        position: myCenter
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);                                    
+                }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
 
             <ul class="w3-ul w3-border">
                 <li><h2>Conocimientos Basicos</h2></li>
