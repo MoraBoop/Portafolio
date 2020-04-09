@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -18,192 +19,166 @@
 
 </head>
 
-<body>    
+<body>
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding w3-blue" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <aside class="w3-sidebar w3-collapse w3-top w3-large w3-padding w3-blue" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>        
         <div class="w3-container">
             <h3 class="w3-padding-64"><b>Portafolio</b></h3>
         </div>
         <div class="w3-bar-block">
             <a href="#proyectos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyectos</a> 
-            <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a> 
-            <a href="#programas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Programas</a> 
+            <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a>             
             <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
             <a href="#certificados" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certificados</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
         </div>
-    </nav>
-    
+    </aside>
+
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+    <nav class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
         <span>Portafolio</span>
-    </header>
+    </nav>
     
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
     
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:340px; margin-right: 30px">    
+    <main class="w3-main" style="margin-left:340px; margin-right: 30px">
         <!-- Proyectos -->
-        <div class="w3-container" id="proyectos">
-            <div style="margin-top: 75px"></div>
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos</b></h1>
-            <hr class="w3-round w3-text-blue">
-        </div>
-        <div class="w3-container">
+        <section class="w3-container" id="proyectos">
             <div>
-                <p>
-                    Todos mis proyectos solo son la base de uso de tecnologias para crear aplicaciones, puedes seguir mis proyectos en mi cuenta de github
-                </p>
-                <h3>                    
-                    <span> <i class="fab fa-github"></i></span> <a href="https://github.com/MoraBoop" target="_blank">Ir a GitHub/MoraBoop</a>                 
-                </h3>
+                <div style="margin-top: 75px"></div>
+                <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos</b></h1>
+                <hr class="w3-round w3-text-blue">
             </div>
-            <div class="grid-container-project">
-
-                <div class="w3-container w3-blue">
-                    <h4>DataQuery</h4>
-                    <p>Aplicacion para gestionar datos de personas</p>
-                    <p><a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/DataQuery" target="_blank">Mas informacion</a></p>
-                </div>                
-                <div class="w3-container w3-green">                    
-                    <h4>Crud-Task</h4>
-                    <p>Aplicacion para almacenar tareas</p>
-                    <p><a class="w3-button w3-hover-white w3-green w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/php-crud-task" target="_blank">Mas informacion</a></p>
+            <div>                
+                <p>Todos mis proyectos solo son la base de uso de tecnologias para crear aplicaciones, puedes seguir mis proyectos en mi cuenta de github</p>                
+                <div class="grid-container-project w3-text-theme">
+                    <article class="w3-container w3-round w3-green">
+                        <h4>DataQuery</h4>
+                        <p>Aplicacion para gestionar datos de personas</p>
+                        <p><a class="w3-button w3-hover-white w3-green w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/DataQuery" target="_blank">codigo</a></p>
+                    </article>
+                    <article class="w3-container w3-round w3-red">
+                        <h4>Crud-Task</h4>
+                        <p>Aplicacion para almacenar tareas</p>
+                        <p>
+                            <a class="w3-button w3-hover-white w3-red w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/php-crud-task" target="_blank">codigo</a>                            
+                        </p>
+                    </article>                    
+                    <article class="w3-container w3-round w3-blue">                    
+                        <h4>Aplicacion de notas</h4>
+                        <p>Aplicacion de notas con laravel</p>
+                        <p><a class="w3-button w3-hover-white w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/sistema-notas" target="_blank">codigo</a></p>
+                    </article>                    
                 </div>
-                
-                <div class="w3-container w3-yellow">                    
-                    <h4>Aplicacion de notas</h4>
-                    <p>Aplicacion de notas con laravel</p>
-                    <p><a class="w3-button w3-hover-white w3-yellow w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/sistema-notas" target="_blank">Mas informacion</a></p>
-                </div>
-                
             </div>
-        </div>
-
+        </section>
+                
         <!-- habilidades -->
-        <div class="w3-container" id="habilidades">            
-            <div style="margin-top: 75px"></div>
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Habilidades</b></h1>
-            <hr class="w3-round w3-text-blue">
-            
-            <h2>Desarrollo web</h2>
-
-            <div class="grid-container-skills ">                
-                <div>
-                    <ul class="w3-ul w3-border w3-hoverable">                        
-                        <li class="w3-green"><h3>FrontEnd</h3></li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Angular</li>
-                        <li>Bootstrap</li>
-                        <li>Font-awesome</li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <ul class="w3-ul w3-border w3-hoverable">
-                        <li class="w3-blue-grey"><h3>BackEnd </h3></li>
-                        <li>MsSQL</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>                        
-                        <li>NodeJS</li>
-                        <li>ExpressJS</li>                                                
-                        <li>PHP - POO</li>
-                        <li>Laravel</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <ul class="w3-ul w3-border w3-hoverable">
-                        <li class="w3-yellow"><h3>Complementos</h3></li>
-                        <li>AJAX</li>
-                        <li>JSON</li>
-                        <li>MarkDown</li>
-                        <li>Git</li>
-                    </ul>
-                </div>
-                
+        <section class="w3-container" id="habilidades">
+            <div>
+                <div style="margin-top: 75px"></div>
+                <h1 class="w3-xxxlarge w3-text-blue"><b>Habilidades</b></h1>
+                <hr class="w3-round w3-text-blue">
             </div>
-                            
-            <br>
-
-            <h2>Google Maps API</h2>
-            <p>Uso basico de la API key de GCP, ejemplo con dos tipos de vista, dos propiedades "etiquetas" y "relieves"</p>
-
-            <div class="myMap" id="map"></div>
-            <script>
-                var map;
-                function initMap() {
-                    map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: -34.397, lng: 150.644},
-                        zoom: 11,
-                        mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain']
-                    });
-                }
-            </script>            
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvq-gqWjeLEMfoTHo2yXRhoh3khjC1Bk&callback=initMap" async defer></script>
-
-            <br>            
+            <article>
+                <h2>Desarrollo web</h2>
+                <div class="grid-container-skills ">                
+                    <div>
+                        <ul class="w3-ul w3-border w3-hoverable">                        
+                            <li class="w3-green"><h3>FrontEnd</h3></li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                            <li>Font-awesome</li>
+                        </ul>
+                    </div>                    
+                    <div>
+                        <ul class="w3-ul w3-border w3-hoverable">
+                            <li class="w3-blue-grey"><h3>BackEnd </h3></li>
+                            <li>MsSQL</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>                        
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>                                                
+                            <li>PHP - POO</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="w3-ul w3-border w3-hoverable">
+                            <li class="w3-yellow"><h3>Complementos</h3></li>
+                            <li>AJAX</li>
+                            <li>JSON</li>
+                            <li>MarkDown</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>                
+            </article>                     
             
-        </div>
-
-        <!-- Programas -->
-        <div class="w3-container" id="programas">
-            <div style="margin-top: 75px"></div>
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Programas</b></h1>
-            <hr class="w3-round w3-text-blue">
+            <article>
+                <h2>Google Maps API</h2>
+                <p>Uso basico de la API key de GCP, ejemplo con dos tipos de vista, dos propiedades "etiquetas" y "relieves"</p>
+                <div class="myMap" id="map"></div>            
+            </article>
+            <article>
+                <h2>Herramientas de software</h2>
+                <ul class="w3-ul w3-border w3-hoverable">
+                    <li class=""><h3 class="w3-opacity"><i class="fab fa-windows" style="margin-right: 20px;"></i>Sistemas</h3></li>
+                    <li>Microsoft Windows</li>
+                    <li>Linux Ubuntu</li>
+                    <li>Linux Debian</li>
+                </ul>
+    
+                <br>
+    
+                <ul class="w3-ul w3-border w3-hoverable">
+                    <li class=""><h3 class="w3-opacity"><i class="fab fa-gitkraken" style="margin-right: 20px;"></i>Desarrollo web</h3></li>
+                    <li>GitKraken</li>
+                    <li>Visual Studio Code</li>
+                    <li>Terminal linux</li>
+                    <li>MongoDB Compass</li>
+                    <li>MySQL Workbench</li>  
+                    <li>Postman</li>              
+                </ul>                        
+            </article>
+            
+        </section>
                         
-            <ul class="w3-ul w3-border w3-hoverable">
-                <li class=""><h3 class="w3-opacity"><i class="fab fa-windows" style="margin-right: 20px;"></i>Sistemas</h3></li>
-                <li>Microsoft Windows</li>
-                <li>Linux Ubuntu</li>
-                <li>Linux Debian</li>
-            </ul>
-
-            <br>
-
-            <ul class="w3-ul w3-border w3-hoverable">
-                <li class=""><h3 class="w3-opacity"><i class="fab fa-gitkraken" style="margin-right: 20px;"></i>Desarrollo web</h3></li>
-                <li>GitKraken</li>
-                <li>Visual Studio Code</li>
-                <li>Terminal linux</li>
-                <li>MongoDB Compass</li>
-                <li>MySQL Workbench</li>  
-                <li>Postman</li>              
-            </ul>
-
-            <br>            
-                        
-        </div>
-
         <!-- About me -->
-        <div class="w3-container" id="about">
-            <div style="margin-top: 75px"></div>
-            <h1 class="w3-xxxlarge w3-text-blue"><b>About me</b></h1>
-            <hr class="w3-round w3-text-blue">
+        <section class="w3-container" id="about">
+            <div>
+                <div style="margin-top: 75px"></div>
+                <h1 class="w3-xxxlarge w3-text-blue"><b>About me</b></h1>
+                <hr class="w3-round w3-text-blue">
+            </div>
             <div>
                 <h3>Jaison Jhair Mora Mora</h3>
-                <p class="w3-opacity">Devs and Desg</p>                
+                <p class="w3-opacity">Devs and Desg</p>
                 <p>Soy una persona responsable, creativa, organizada, respetuosa y sociable. Me considero un autodidacta y siempre estoy a la vanguardia de todas las nuevas tendencias del desarrollo web</p>
-                
-                <p>
-                    <li class="w3-opacity">Responsive Design</li>
-                    <li class="w3-opacity">Diseño interactivo</li>
-                    <li class="w3-opacity">Frameworks de desarrollo</li>
-                    <li class="w3-opacity">Patrones de desarrollo</li>                    
-                </p>
+                <ul class="w3-opacity">
+                    <li>Responsive Design</li>
+                    <li>Diseño interactivo</li>
+                    <li>Experiencia de usuario</li>
+                    <li>Frameworks de desarrollo</li>
+                    <li>Patrones de desarrollo</li>
+                    <li>Metodologias ajiles</li>
+                </ul>                
             </div>
-        </div>
+        </section>
 
         <!-- Certificados -->
-        <div class="w3-container" id="certificados">
-            <div style="margin-top: 75px"></div>
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Certificados</b></h1>
-            <hr class="w3-round w3-text-blue"> 
+        <section class="w3-container" id="certificados">
+            <div>
+                <div style="margin-top: 75px"></div>
+                <h1 class="w3-xxxlarge w3-text-blue"><b>Certificados</b></h1>
+                <hr class="w3-round w3-text-blue">
+            </div>
 
             <div class="w3-row">
                 <div class="w3-col l4 m6 s12 w3-margin-bottom">
@@ -222,13 +197,15 @@
                     </a>
                 </div>              
             </div>            
-        </div>
+        </section>
 
         <!-- Contact -->
-        <div class="w3-container" id="contact">
-            <div style="margin-top: 75px"></div>
-            <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
-            <hr class="w3-round w3-text-blue">           
+        <section class="w3-container" id="contact">
+            <div>
+                <div style="margin-top: 75px"></div>
+                <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
+                <hr class="w3-round w3-text-blue">
+            </div>
             <p>
                 <i class="fas fa-envelope w3-xlarge w3-text-cyan"></i><span class="w3-opacity"><b> Mail:</b></span>
                 <br><span>jasonjairmoramora@gmail.com</span>
@@ -244,21 +221,22 @@
             </p>
 
             <br>
-            
-            <!-- redes sociales -->
             <br>
-            <h3 class="w3-opacity">Redes Sociales</h3>
-            <p>Tambien puedes contactarme atravez de mis redes sociales</p>
+
+            <!-- redes sociales -->            
+            <h3 class="w3-opacity">Redes Sociales</h3>            
             <a href="https://www.facebook.com/eliot.mora13" target="_blank"><i class="fab fa-facebook-square w3-xxxlarge w3-text-indigo"></i></a>
             <a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square w3-xxxlarge w3-text-red w3-margin-left"></i></a>
             <a href="https://github.com/moraboop" target="_blank"><i class="fab fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>
-        </div>        
-                
+            <a href="https://moraboop.blogspot.com/" target="_blank"><i class="fab fa-blogger w3-xxxlarge w3-text-orange w3-margin-left"></i></a>
+        </section>                            
+    </main>
         
-    <!-- End page content -->
-    </div>
-    
-    <!-- W3.CSS Container -->
-    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>    
+    <footer class="w3-theme-l4 w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">Powered by <span class="w3-tag w3-blue w3-round w3-center"><b>Jaison Mora</b></span></p>
+    </footer>
+
+    <script src="GoogleMaps.js"></script>            
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvq-gqWjeLEMfoTHo2yXRhoh3khjC1Bk&callback=initMap" async defer></script>            
 </body>
 </html>
