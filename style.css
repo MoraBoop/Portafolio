@@ -26,12 +26,6 @@ hr {border: solid 5px; width: 50px;}
     grid-gap: 15px;
 }
 
-.grid-container-design {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 15px;
-}
-
 .grip-container-certificates {
     display: grid;
     grid-template-columns: auto auto auto;
