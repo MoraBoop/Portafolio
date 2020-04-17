@@ -14,6 +14,12 @@ hr {border: solid 5px; width: 50px;}
     height: 200px;
 }
 
+.project {    
+    font-size: small;
+    font-weight: bolder;
+    text-align: justify;
+    color: gray;
+}
 .grid-container-project {
     display: grid;
     grid-template-columns: auto auto auto;
