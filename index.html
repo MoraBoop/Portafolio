@@ -2,318 +2,329 @@
 <html lang="en">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="fav/favicon.ico">    
-    
-    <title>Jason Mora || Portafolio</title>
-    
-    <script src="menu-responsive.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="fav/favicon.ico">    
+  
+  <title>Jason Mora || Portafolio</title>
+  
+  <script src="menu-responsive.js"></script>
+
 </head>
 
 <body>
-    <!-- Sidebar/menu -->
-    <aside class="w3-sidebar w3-collapse w3-top w3-large w3-padding w3-blue" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>        
-        <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Portafolio</b></h3>
-        </div>
-        <div class="w3-bar-block">
-            <a href="#proyectos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyectos</a> 
-            <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a>             
-            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
-            <a href="#certificados" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certificados</a>
-            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
-        </div>
-    </aside>
 
-    <!-- Top menu on small screens -->
-    <nav class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
-        <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
-        <span>Portafolio</span>
-    </nav>
-    
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-    
-    <!-- !PAGE CONTENT! -->
-    <main class="w3-main" style="margin-left:340px; margin-right: 30px">
-        <!-- Proyectos -->
-        <section class="w3-container" id="proyectos">
-            <div>
-                <div style="margin-top: 75px"></div>
-                <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos</b></h1>
-                <hr class="w3-round w3-text-blue">
-            </div>
-            <div>                
-                <p>Todos mis proyectos solo son la base de uso de tecnologias para crear aplicaciones, puedes seguir mis proyectos en mi cuenta de github</p>                
-                <div class="grid-container-project">
-                    <article class="w3-card w3-theme-l4">
-                        <img src="imgs/proyects/sis_venta.png" width="100%">
-                        <div class="w3-container project">
-                            <p>SISTEMA DE VENTAS HECHO EN CSHARP, PATRON ARQUITECTONICO MVC</p>
-                            <p>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/sistema-ventas-cshar" target="_blank"><i class="fas fa-code"></i></a>
-                            </p>
-                        </div>                        
-                    </article>
-                    <article class="w3-card w3-theme-l4">
-                        <img src="imgs/proyects/carrito.png" width="100%">
-                        <div class="w3-container project">
-                            <p>PAGINA WEB CON CARRITO DE COMPRAS</p>
-                            <p>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/carrito-compras-LS" target="_blank"><i class="fas fa-code"></i></a>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://moraboop.github.io/carrito-compras-LS/" target="_blank"><i class="fas fa-eye"></i></a>
-                            </p>
-                        </div>                        
-                    </article>
-                    <article class="w3-card w3-theme-l4">
-                        <img src="imgs/proyects/localstorage.png" width="100%">
-                        <div class="w3-container project">                                                        
-                            <p>
-                                <p>PROYECTO JAVASCRIPT, CREAR Y ELIMINAR DESDE LS</p>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/LocalStorage" target="_blank"><i class="fas fa-code"></i></a>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://moraboop.github.io/LocalStorage/" target="_blank"><i class="fas fa-eye"></i></a>
-                            </p>
-                        </div>                        
-                    </article>
-                    <article class="w3-card w3-theme-l4">
-                        <img src="imgs/proyects/crudphp.png" width="100%">
-                        <div class="w3-container project">                                                        
-                            <p>
-                                <p>CRUD HECHO CON LARAVEL, PHP, MYSQL</p>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/php-crud-task" target="_blank"><i class="fas fa-code"></i></a>                                
-                            </p>
-                        </div>
-                    </article>
-                    <article class="w3-card w3-theme-l4">
-                        <img src="imgs/proyects/data.png" width="100%">
-                        <div class="w3-container project">                                                        
-                            <p>CRUD HECHO CON NODEJS Y MONGODB</p>
-                            <p>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/DataQuery" target="_blank"><i class="fas fa-code"></i></a>
-                            </p>
-                        </div>
-                    </article>                    
-                    <article class="w3-card w3-theme-l4">
-                        <img src="imgs/proyects/laravel.png" width="100%">
-                        <div class="w3-container project">
-                            <p>CRUD HECHO CON PHP Y MYSQL</p>
-                            <p>
-                                <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/sistema-notas" target="_blank"><i class="fas fa-code"></i></a>
-                            </p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-                
-        <!-- habilidades -->
-        <section class="w3-container" id="habilidades">
-            <div>
-                <div style="margin-top: 75px"></div>
-                <h1 class="w3-xxxlarge w3-text-blue"><b>Habilidades</b></h1>
-                <hr class="w3-round w3-text-blue">
-            </div>
-            <article>
-                <h3>Lenguajes y Framework</h3>
-                <div class="grid-container-skills ">                
-                    <div>
-                        <ul class="w3-ul w3-border w3-hoverable">                        
-                            <li class="w3-blue-grey"><h3>FrontEnd</h3></li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Angular</li>
-                            <li>Bootstrap</li>
-                            <li>Font-awesome</li>                            
-                        </ul>
-                    </div>                    
-                    <div>
-                        <ul class="w3-ul w3-border w3-hoverable">
-                            <li class="w3-blue-grey"><h3>BackEnd </h3></li>                        
-                            <li>MySQL</li>
-                            <li>MongoDB</li>                        
-                            <li>NodeJS</li>
-                            <li>ExpressJS</li>                                                
-                            <li>PHP - POO</li>
-                            <li>Laravel</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="w3-ul w3-border w3-hoverable">
-                            <li class="w3-blue-grey"><h3>Complementos</h3></li>
-                            <li>AJAX</li>
-                            <li>JSON</li>
-                            <li>MarkDown</li>
-                            <li>Git</li>
-                            <li>Npm</li>
-                            <li>Fetch</li>
-                        </ul>
-                    </div>                
-            </article>                                 
-            <article>                
-                <h3>Google Maps API</h3>
-                <div class="myMap" id="map"></div>            
+  <!-- Sidebar/menu -->
+  <aside class="w3-sidebar w3-collapse w3-top w3-large w3-padding w3-blue" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>        
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Portafolio</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#proyectos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Proyectos</a> 
+      <a href="#habilidades" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Habilidades</a>             
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a>
+      <a href="#certificados" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Certificados</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contacto</a>
+    </div>
+  </aside>
+
+  <!-- Top menu on small screens -->
+  <nav class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Portafolio</span>
+  </nav>
+  
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+  <!-- !PAGE CONTENT! -->
+  <main class="w3-main" style="margin-left:340px; margin-right: 30px">
+    <!-- Proyectos -->
+    <section class="w3-container" id="proyectos">
+      <div>
+          <div style="margin-top: 75px"></div>
+          <h1 class="w3-xxxlarge w3-text-blue"><b>Proyectos</b></h1>
+          <hr class="w3-round w3-text-blue">
+      </div>
+      <div>                
+          <p>Todos mis proyectos solo son la base de uso de tecnologias para crear aplicaciones, puedes seguir mis proyectos en mi cuenta de github</p>
+
+          <div class="grid-container-project">
+
+            <article class="w3-card w3-theme-l4" style="padding: 10px;">    
+              <img src="imgs/proyects/cap.png" width="100%">
+              <div class="w3-container project">
+                <p>PAGINA WEB CON CARRITO DE COMPRAS</p>
+                <p>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/carrito-compras-LS" target="_blank"><i class="fas fa-code"></i></a>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://moraboop.github.io/carrito-compras-LS/" target="_blank"><i class="fas fa-eye"></i></a>
+                </p>
+              </div>                        
             </article>
-            <article>                                
-                <h3>Herramientas de software</h3>
-                <ul class="w3-ul">                    
-                    <li class="w3-bar">
-                        <img src="imgs/windows.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">Microsoft Windows</span><br>
-                            <span>Sistema Operativo</span>
-                        </div>
-                    </li>
-                    <li class="w3-bar">
-                        <img src="imgs/ubuntu.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">Linux Ubuntu</span><br>
-                            <span>Sistema Operativo</span>
-                        </div>
-                    </li>                    
-                    <li class="w3-bar">
-                        <img src="imgs/debian.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">Linux Debian</span><br>
-                            <span>Sistema Operativo</span>
-                        </div>
-                    </li>
-                    <li class="w3-bar">
-                        <img src="imgs/gitkraken.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">GitKraken</span><br>
-                            <span>herramienta de control de versiones</span>
-                        </div>
-                    </li>                                    
-                    <li class="w3-bar">
-                        <img src="imgs/vscode.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">Visual Studio Code</span><br>
-                            <span>editor de codigo</span>
-                        </div>
-                    </li>                
-                    <li class="w3-bar">
-                        <img src="imgs/terminal.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">Terminal</span><br>
-                            <span>Terminal linux deb</span>
-                        </div>
-                    </li>                    
-                    <li class="w3-bar">
-                        <img src="imgs/mysqlwork.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">MySQL Workbench</span><br>
-                            <span>Gestor de base de datos</span>
-                        </div>
-                    </li>                    
-                    <li class="w3-bar">
-                        <img src="imgs/postman.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
-                        <div class="w3-bar-item">
-                            <span class="w3-large">Postman</span><br>
-                            <span>Manejador de API</span>
-                        </div>
-                    </li>
-                </ul>                            
-            </article>            
-        </section>
-                        
-        <!-- About me -->
-        <section class="w3-container" id="about">
-            <div>
-                <div style="margin-top: 75px"></div>
-                <h1 class="w3-xxxlarge w3-text-blue"><b>About me</b></h1>
-                <hr class="w3-round w3-text-blue">
-            </div>
-            <div>
-                <h3>Jaison Jhair Mora Mora</h3>
-                <p class="w3-opacity">Devs and Desg</p>
-                <p>Soy una persona responsable, creativa, organizada, respetuosa y sociable. Me considero un autodidacta y siempre estoy a la vanguardia de todas las nuevas tendencias del desarrollo web</p>
-                <ul class="w3-opacity">
-                    <li>Responsive Design</li>
-                    <li>Diseño interactivo</li>
-                    <li>Experiencia de usuario</li>
-                    <li>Frameworks de desarrollo</li>
-                    <li>Patrones de desarrollo</li>
-                    <li>Metodologias ajiles</li>
-                    <li>Programacion en capas</li>
-                </ul>                
-            </div>
-        </section>
 
-        <!-- Certificados -->
-        <section class="w3-container" id="certificados">
-            <div>
-                <div style="margin-top: 75px"></div>
-                <h1 class="w3-xxxlarge w3-text-blue"><b>Certificados</b></h1>
-                <hr class="w3-round w3-text-blue">
-            </div>
+            <article class="w3-card w3-theme-l4" style="padding: 10px;">
+              <img src="imgs/proyects/cap.png" width="100%">
+              <div class="w3-container project">
+                <p>
+                  <p>PROYECTO JAVASCRIPT, CREAR Y ELIMINAR DESDE LS</p>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/LocalStorage" target="_blank"><i class="fas fa-code"></i></a>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://moraboop.github.io/LocalStorage/" target="_blank"><i class="fas fa-eye"></i></a>
+                </p>
+              </div>
+            </article>
+            
+            <article class="w3-card w3-theme-l4" style="padding: 10px;">
+              <img src="imgs/proyects/min-php-crud-task.png" width="100%">
+              <div class="w3-container project">
+                <p>
+                  <p>Abm con php y mysql</p>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/php-crud-task" target="_blank"><i class="fas fa-code"></i></a>
+                </p>
+              </div>
+            </article>
 
-            <div class="grip-container-certificates">
-                <div class="w3-card">
-                    <a href="imgs/tecn.jpg" target="_blank">
-                        <img src="imgs/tecn.jpg" alt="certificado tecnico" width="100%">
-                    </a>
-                </div>              
-                <div class="w3-card">
-                    <a href="imgs/Certificate_page-0001.jpg" target="_blank">
-                        <img src="imgs/Certificate_page-0001.jpg" alt="certificado tecnico" width="100%">
-                    </a>
-                </div> 
-                <div class="w3-card">
-                    <a href="imgs/MORA MORA,JAISON JHAIR_page-0001.jpg" target="_blank">
-                        <img src="imgs/MORA MORA,JAISON JHAIR_page-0001.jpg" alt="certificado tecnico" width="100%">
-                    </a>
-                </div>              
-            </div>            
-        </section>
+            <article class="w3-card w3-theme-l4" style="padding: 10px;">
+              <img src="imgs/proyects/cap.png" width="100%">
+              <div class="w3-container project">
+                <p>CRUD HECHO CON NODEJS Y MONGODB</p>
+                <p>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/DataQuery" target="_blank"><i class="fas fa-code"></i></a>
+                </p>
+              </div>
+            </article>
 
-        <!-- Contact -->
-        <section class="w3-container" id="contact">
-            <div>
-                <div style="margin-top: 75px"></div>
-                <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
-                <hr class="w3-round w3-text-blue">
-            </div>
-            <p>
-                <i class="fas fa-envelope w3-xlarge w3-text-cyan"></i><span class="w3-opacity"><b> Mail:</b></span>
-                <br><span>jasonjairmoramora@gmail.com</span>
-            </p>
-            <p>
-                <i class="fas fa-phone-square w3-xlarge w3-text-green"></i><span class="w3-opacity"><b> Telefonos:</b></span>
-                <br><span>2338081</span>
-                <br><span>922057483</span>
-            </p> 
-            <p>        
-                <i class="fas fa-map-marker-alt w3-xlarge w3-text-red"></i><span class="w3-opacity"><b> Ubicacion:</b></span>
-                <br><span>Lima, Breña</span>
-            </p>
+            <article class="w3-card w3-theme-l4" style="padding: 10px;">
+              <img src="imgs/proyects/cap.png" width="100%">
+              <div class="project">
+                <p>CRUD HECHO CON PHP Y MYSQL</p>
+                <p>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/MoraBoop/sistema-notas" target="_blank"><i class="fas fa-code"></i></a>
+                </p>
+              </div>
+            </article>
 
-            <br>
-            <br>
+            <article class="w3-card w3-theme-l4" style="padding: 10px;">
+              <img src="imgs/proyects/min-php-crud-usuarios.png" width="100%">
+              <div class="project">
+                <p>Aplicacion asincrona con php y ajax</p>
+                <p>
+                  <a class="w3-button w3-hover-white w3-blue w3-border w3-border-white w3-round-large" href="https://github.com/JMoraMora/php-crud-usuarios" target="_blank"><i class="fas fa-code"></i></a>
+                </p>
+              </div>
+            </article>
 
-            <!-- redes sociales -->            
-            <h3 class="w3-opacity">Redes Sociales</h3>            
-            <a href="https://www.facebook.com/eliot.mora13" target="_blank"><i class="fab fa-facebook-square w3-xxxlarge w3-text-indigo"></i></a>
-            <a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square w3-xxxlarge w3-text-red w3-margin-left"></i></a>
-            <a href="https://github.com/moraboop" target="_blank"><i class="fab fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>
-            <a href="https://moraboop.blogspot.com/" target="_blank"><i class="fab fa-blogger w3-xxxlarge w3-text-orange w3-margin-left"></i></a>
-        </section>                            
-    </main>
-        
-    <footer class="w3-theme-l4 w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-        <p class="w3-right">Powered by <span class="w3-tag w3-blue w3-round w3-center"><b>Jaison Mora</b></span></p>
-    </footer>
+        </div>
+      </div>
+    </section>
+            
+    <!-- habilidades -->
+    <section class="w3-container" id="habilidades">
+      <div>
+        <div style="margin-top: 75px"></div>
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Habilidades</b></h1>
+        <hr class="w3-round w3-text-blue">
+      </div>
+      <article>
+        <h3>Lenguajes y Framework</h3>
+        <div class="grid-container-skills ">                
+          <div>
+            <ul class="w3-ul w3-border w3-hoverable">                        
+              <li class="w3-blue-grey"><h3>FrontEnd</h3></li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Angular</li>
+              <li>Bootstrap</li>
+              <li>Font-awesome</li>                            
+            </ul>
+          </div>                    
+          <div>
+            <ul class="w3-ul w3-border w3-hoverable">
+              <li class="w3-blue-grey"><h3>BackEnd </h3></li>                        
+              <li>MySQL</li>
+              <li>MongoDB</li>                        
+              <li>NodeJS</li>
+              <li>ExpressJS</li>                                                
+              <li>PHP - POO</li>
+              <li>Laravel</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="w3-ul w3-border w3-hoverable">
+              <li class="w3-blue-grey"><h3>Complementos</h3></li>
+              <li>AJAX</li>
+              <li>JSON</li>
+              <li>MarkDown</li>
+              <li>Git</li>
+              <li>Npm</li>
+              <li>Fetch</li>
+            </ul>
+          </div>
+        </div>
+      </article>                                 
+      <article>                
+          <h3>Google Maps API</h3>
+          <div class="myMap" id="map"></div>            
+      </article>
+      <article>                                
+          <h3>Herramientas de software</h3>
+          <ul class="w3-ul">                    
+              <li class="w3-bar">
+                  <img src="imgs/skills/windows.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">Microsoft Windows</span><br>
+                      <span>Sistema Operativo</span>
+                  </div>
+              </li>
+              <li class="w3-bar">
+                  <img src="imgs/skills/ubuntu.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">Linux Ubuntu</span><br>
+                      <span>Sistema Operativo</span>
+                  </div>
+              </li>                    
+              <li class="w3-bar">
+                  <img src="imgs/skills/debian.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">Linux Debian</span><br>
+                      <span>Sistema Operativo</span>
+                  </div>
+              </li>
+              <li class="w3-bar">
+                  <img src="imgs/skills/gitkraken.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">GitKraken</span><br>
+                      <span>herramienta de control de versiones</span>
+                  </div>
+              </li>                                    
+              <li class="w3-bar">
+                  <img src="imgs/skills/vscode.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">Visual Studio Code</span><br>
+                      <span>editor de codigo</span>
+                  </div>
+              </li>                
+              <li class="w3-bar">
+                  <img src="imgs/skills/terminal.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">Terminal</span><br>
+                      <span>Terminal linux deb</span>
+                  </div>
+              </li>                    
+              <li class="w3-bar">
+                  <img src="imgs/skills/mysqlwork.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">MySQL Workbench</span><br>
+                      <span>Gestor de base de datos</span>
+                  </div>
+              </li>                    
+              <li class="w3-bar">
+                  <img src="imgs/skills/postman.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+                  <div class="w3-bar-item">
+                      <span class="w3-large">Postman</span><br>
+                      <span>Manejador de API</span>
+                  </div>
+              </li>
+          </ul>                            
+      </article>            
+    </section>
+                    
+    <!-- About me -->
+    <section class="w3-container" id="about">
+      <div>
+        <div style="margin-top: 75px"></div>
+        <h1 class="w3-xxxlarge w3-text-blue"><b>About me</b></h1>
+        <hr class="w3-round w3-text-blue">
+      </div>
+      <div>
+        <h3>Jaison Jhair Mora Mora</h3>
+        <p class="w3-opacity">Devs and Desg</p>
+        <p>Soy una persona responsable, creativa, organizada, respetuosa y sociable. Me considero un autodidacta y siempre estoy a la vanguardia de todas las nuevas tendencias del desarrollo web</p>
+        <ul class="w3-opacity">
+          <li>Responsive Design</li>
+          <li>Diseño interactivo</li>
+          <li>Experiencia de usuario</li>
+          <li>Frameworks de desarrollo</li>
+          <li>Patrones de desarrollo</li>
+          <li>Metodologias ajiles</li>
+          <li>Programacion en capas</li>
+        </ul>                
+      </div>
+    </section>
 
-    <script src="GoogleMaps.js"></script>            
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvq-gqWjeLEMfoTHo2yXRhoh3khjC1Bk&callback=initMap" async defer></script>            
+    <!-- Certificados -->
+    <section class="w3-container" id="certificados">
+      <div>
+        <div style="margin-top: 75px"></div>
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Certificados</b></h1>
+        <hr class="w3-round w3-text-blue">
+      </div>
+
+      <div class="grip-container-certificates">
+        <div class="w3-card">
+          <a href="imgs/certificates/idat-contabilidad.jpg" target="_blank">
+            <img src="imgs/certificates/idat-contabilidad.jpg" alt="certificado tecnico" width="100%">
+          </a>
+        </div>              
+        <div class="w3-card">
+          <a href="imgs/certificates/microsoft-des-web.jpg" target="_blank">
+            <img src="imgs/certificates/microsoft-des-web.jpg" alt="certificado tecnico" width="100%">
+          </a>
+        </div>
+        <div class="w3-card">
+          <a href="imgs/certificates/von-braun.jpg" target="_blank">
+            <img src="imgs/certificates/von-braun.jpg" alt="certificado tecnico" width="100%">
+          </a>
+        </div>
+      </div>            
+    </section>
+
+    <!-- Contact -->
+    <section class="w3-container" id="contact">
+      <div>
+        <div style="margin-top: 75px"></div>
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Contacto</b></h1>
+        <hr class="w3-round w3-text-blue">
+      </div>
+      <p>
+        <i class="fas fa-envelope w3-xlarge w3-text-cyan"></i><span class="w3-opacity"><b> Mail:</b></span>
+        <br><span>jasonjairmoramora@gmail.com</span>
+      </p>
+      <p>
+        <i class="fas fa-phone-square w3-xlarge w3-text-green"></i><span class="w3-opacity"><b> Telefonos:</b></span>
+        <br><span>2338081</span>
+        <br><span>922057483</span>
+      </p> 
+      <p>        
+        <i class="fas fa-map-marker-alt w3-xlarge w3-text-red"></i><span class="w3-opacity"><b> Ubicacion:</b></span>
+        <br><span>Lima, Breña</span>
+      </p>
+
+      <br>
+      <br>
+
+      <!-- redes sociales -->            
+      <h3 class="w3-opacity">Redes Sociales</h3>            
+      <a href="https://www.facebook.com/eliot.mora13" target="_blank"><i class="fab fa-facebook-square w3-xxxlarge w3-text-indigo"></i></a>
+      <a href="https://www.youtube.com/channel/UClpUfzMlZdnZJVlEEu5wE8w?view_as=subscriber" target="_blank"><i class="fab fa-youtube-square w3-xxxlarge w3-text-red w3-margin-left"></i></a>
+      <a href="https://github.com/moraboop" target="_blank"><i class="fab fa-github-square w3-xxxlarge w3-text-black w3-margin-left"></i></a>
+      <a href="https://moraboop.blogspot.com/" target="_blank"><i class="fab fa-blogger w3-xxxlarge w3-text-orange w3-margin-left"></i></a>
+    </section>                            
+  </main>
+      
+  <footer class="w3-theme-l4 w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">Powered by <span class="w3-tag w3-blue w3-round w3-center"><b>Jaison Mora</b></span></p>
+  </footer>
+
+  <script src="GoogleMaps.js"></script>            
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHvq-gqWjeLEMfoTHo2yXRhoh3khjC1Bk&callback=initMap" async defer></script>
 </body>
 </html>
